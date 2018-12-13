@@ -19,7 +19,7 @@ class UsersController extends Controller
             $content->body($this->grid());
         });
     }
-     protected function grid()
+    protected function grid()
     {
         return Admin::grid(User::class, function (Grid $grid) {
             $grid->id('ID')->sortable();
